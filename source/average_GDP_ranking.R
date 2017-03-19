@@ -9,7 +9,7 @@ merged_Data %>%
   # Group the data by income group 
   group_by(Income.Group) %>% 
   # Compute the mean of GDP Ranking
-  summarize(mean(as.numeric(GDP.Ranking))) %>%
+  summarize(mean(GDP.Ranking)) %>%
   # Convert the result into a Data Frame so as to make it more readable
   as.data.frame %>%
   # Assign proper column headings
